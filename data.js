@@ -186,31 +186,39 @@ const CONCERTS = [
   },
 ];
 
-// 오케스트라로 언젠가 꼭 연주하고 싶은 곡 (예시예요. 실제 곡으로 바꿔주세요)
+// 오케스트라로 언젠가 꼭 연주하고 싶은 곡
 const ORCHESTRA_WISHLIST = [
-  { composer: "G. Mahler", piece: "Symphony No. 5" },
-  { composer: "P. I. Tchaikovsky", piece: "Symphony No. 5" },
-  { composer: "S. Rachmaninoff", piece: "Symphony No. 2" },
+  { composer: "Johannes Brahms", piece: "Symphony No. 3 in F major, Op. 90" },
+  { composer: "Johannes Brahms", piece: "Symphony No. 4 in E minor, Op. 98" },
+  { composer: "Camille Saint-Saëns", piece: "Bacchanale from Samson et Dalila, Op. 47" },
+  { composer: "Aram Khachaturian", piece: "Spartacus Suite" },
+  { composer: "Pyotr Ilyich Tchaikovsky", piece: "Pas de deux from The Nutcracker, Op. 71" },
+  { composer: "Antonín Dvořák", piece: "Symphony No. 8 in G major, Op. 88" },
+  { composer: "Alexander Borodin", piece: "Polovtsian Dances from Prince Igor" },
 ];
 
 // ---------- 바이올린 ----------
 const VIOLIN = {
   // 지금 연습 중인 곡
   now: {
-    composer: "작곡가",
-    piece: "지금 연습 중인 곡",
-    note: "since 2026.09",   // 짧은 메모 (선택)
+    composer: "Max Bruch",
+    piece: "Violin Concerto No. 1 in G minor, Op. 26",
+    note: "since 2026.01",   // 짧은 메모 (선택)
   },
-  // 공부했던 협주곡 (예시예요. 실제 곡으로 바꿔주세요)
+  // 공부했던 곡. favorite: true 를 붙이면 굵게 표시돼요.
   studied: [
-    { composer: "A. Vivaldi", piece: "Violin Concerto in A minor, RV 356" },
-    { composer: "O. Rieding", piece: "Violin Concerto in B minor, Op. 35" },
-    { composer: "J. S. Bach", piece: "Violin Concerto No. 1 in A minor, BWV 1041" },
+    { composer: "Wolfgang Amadeus Mozart", piece: "Violin Concerto No. 3 in G major, K. 216" },
+    { composer: "Wolfgang Amadeus Mozart", piece: "Violin Concerto No. 4 in D major, K. 218" },
+    { composer: "Wolfgang Amadeus Mozart", piece: "Violin Concerto No. 5 in A major, K. 219" },
+    { composer: "Joseph Haydn", piece: "Violin Concerto No. 4 in G major, Hob. VIIa:4" },
+    { composer: "Felix Mendelssohn", piece: "Violin Concerto in E minor, Op. 64", favorite: true },
+    { composer: "Fritz Kreisler", piece: "Praeludium and Allegro in the Style of Pugnani", favorite: true },
   ],
   // 언젠가 꼭 연주하고 싶은 곡
   wishlist: [
-    { composer: "M. Bruch", piece: "Violin Concerto No. 1 in G minor" },
-    { composer: "F. Mendelssohn", piece: "Violin Concerto in E minor" },
+    { composer: "Camille Saint-Saëns", piece: "Introduction and Rondo Capriccioso in A minor, Op. 28" },
+    { composer: "Eugène Ysaÿe", piece: "Sonata for Solo Violin No. 3 in D minor \"Ballade\", Op. 27" },
+    { composer: "Pyotr Ilyich Tchaikovsky", piece: "Violin Concerto in D major, Op. 35" },
   ],
 };
 

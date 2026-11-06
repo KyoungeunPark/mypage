@@ -72,7 +72,7 @@ if (VIOLIN.now && VIOLIN.now.piece) {
   $("nowCard").remove();
 }
 $("studiedList").innerHTML = VIOLIN.studied.map((p) => `
-  <li><div><span class="p-piece">${esc(p.piece)}</span><span class="p-composer">${esc(p.composer)}</span></div></li>`).join("");
+  <li${p.favorite ? ' class="fav"' : ""}><div><span class="p-piece">${esc(p.piece)}${p.favorite ? ' <span class="fav-mark" aria-label="좋아하는 곡">♡</span>' : ""}</span><span class="p-composer">${esc(p.composer)}</span></div></li>`).join("");
 const renderWish = (list) => list.map((p) => `
   <li>${esc(p.piece)} <small>· ${esc(p.composer)}</small></li>`).join("");
 $("wishList").innerHTML = renderWish(VIOLIN.wishlist);
@@ -93,7 +93,7 @@ $("danceFlow").innerHTML = DANCE.map((d, i) => {
 const paperList = (papers = []) => papers.length ? `
   <ul class="t-papers">${papers.map((p) => {
     const body = `<span class="tp-title">${esc(p.title)}</span>
-      <span class="tp-meta">${esc(p.authors)} · <i>${esc(p.venue)}</i>${p.year ? `, ${esc(p.year)}` : ""}</span>`;
+      <span class="tp-meta">${esc(p.authors).replaceAll(esc(SITE.name), `<b>${esc(SITE.name)}</b>`)} ·<i>${esc(p.venue)}</i>${p.year ? `, ${esc(p.year)}` : ""}</span>`;
     return `<li>${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener">${body}<span class="tp-go">↗</span></a>` : `<div>${body}</div>`}</li>`;
   }).join("")}</ul>` : "";
 

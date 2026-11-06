@@ -325,3 +325,9 @@ a.icon-link:hover { border-color: var(--rose); background: var(--pink-soft); tra
   .c-title { font-size: 18px; }
   .c-program { font-size: 13px; }
 }
+
+/* 좋아하는 곡 · 내 이름 강조 */
+.piece-list li.fav .p-piece { font-weight: 500; color: var(--rose-deep); }
+.piece-list li.fav .p-composer { color: var(--rose); }
+.fav-mark { font-size: 13px; color: var(--rose); }
+.tp-meta b { font-weight: 700; color: var(--ink); }
