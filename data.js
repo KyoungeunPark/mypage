@@ -13,10 +13,10 @@ const SITE = {
   // 인스타그램·구글스칼라·링크드인 아이콘은 항상 보이고, 링크를 넣으면 눌러져요.
   // 이메일·유튜브는 값을 넣었을 때만 아이콘이 나타나요.
   contact: {
-    instagram: "",           // 예: "https://instagram.com/ke_everything_"
-    scholar: "",             // 예: "https://scholar.google.com/citations?user=..."
-    linkedin: "",            // 예: "https://www.linkedin.com/in/kyoungeun-park-284343285"
-    email: "",               // 예: "miniholic98@gmail.com"
+    instagram: "https://instagram.com/ke_everything_",           // 예: "https://instagram.com/ke_everything_"
+    scholar: "https://scholar.google.com/citations?user=8inKhnwAAAAJ&hl=ko",             // 예: "https://scholar.google.com/citations?user=..."
+    linkedin: "https://www.linkedin.com/in/kyoungeun-park-284343285/",            // 예: "https://www.linkedin.com/in/kyoungeun-park-284343285"
+    email: "miniholic98@gmail.com",               // 예: "miniholic98@gmail.com"
     youtube: "",
   },
 };
@@ -30,7 +30,7 @@ const CONCERTS = [
     group: "고려대학교 관현악단",
     title: "제34회 신춘연주회",
     venue: "고려대학교 인촌기념관",
-    part: "Violin I",
+    part: "",
     program: [
       "H. Berlioz — La Damnation de Faust 'Marche Hongroise', Op. 24",
       "F. Chopin — Piano Concerto No. 1 in E minor, Op. 11",
@@ -127,7 +127,7 @@ const CONCERTS = [
     date: "2024.12.11",
     group: "현악동호회 SASSE",
     title: "Joyful Bells Concert",
-    venue: "DE타워 로비",
+    venue: "삼성전자 R&D 캠퍼스 DE타워 로비",
     part: "",
     program: [],             // 포스터에 곡목이 없어요
     video: "",
@@ -151,7 +151,7 @@ const CONCERTS = [
     poster: "imgs/2025_kamph.png",
     date: "2025.09.13",
     group: "KAMPH",         // 단체 정식 이름으로 바꿔주세요
-    title: "Shostakovich Night",
+    title: "KAMPh 제 2회 정기연주회",
     venue: "과천시민회관",
     part: "",
     program: [
@@ -166,7 +166,7 @@ const CONCERTS = [
     date: "2025.12.11",
     group: "현악동호회 SASSE",
     title: "Winter Serenade",
-    venue: "AB타워 로비",
+    venue: "삼성전자 R&D 캠퍼스 AB타워 로비",
     part: "",
     program: [],             // 포스터에 곡목이 없어요
     video: "",
@@ -237,18 +237,21 @@ const JOURNEY = [
     desc: "수면 및 신경퇴행성 질환 관련 생체신호 연구",
     papers: [
       {
-        title: "논문 제목을 입력해주세요",
-        authors: "Your Name, Co-author, Co-author",
-        venue: "Journal Name",
+        title: "Quantitative measurement of motor activity during sleep in isolated REM sleep behavior disorder patients using actigraphy before and after treatment with clonazepam",
+        // 공저자 12명이라 줄였어요. 전체 목록: Kyoungeun Park, Yong Woo Shin, Sungeun Hwang, El Jeong,
+        // Tae-Joon Kim, Jin-Sun Jun, Jung-Won Shin, Jung-Ick Byun, Jun-Sang Sunwoo, Han-Joon Kim,
+        // Carlos H Schenck, Ki-Young Jung
+        authors: "Kyoungeun Park, Yong Woo Shin, Sungeun Hwang, et al.",
+        venue: "SLEEP 46(9)",
         year: "2023",
-        link: "",            // DOI 링크
+        link: "https://doi.org/10.1093/sleep/zsad132",
       },
       {
-        title: "논문 제목을 입력해주세요",
-        authors: "Your Name, Co-author",
-        venue: "Journal Name",
+        title: "Electroencephalographic spectro-spatial covariance patterns related to phenoconversion in isolated rapid eye movement sleep behavior disorder and their longitudinal trajectories in α-synucleinopathies",
+        authors: "Kyoungeun Park, Jung Hwan Shin, Jung-Ick Byun, El Jeong, Han-Joon Kim, Ki-Young Jung",
+        venue: "SLEEP 47(6)",
         year: "2024",
-        link: "",
+        link: "https://doi.org/10.1093/sleep/zsae052",
       },
     ],
   },
