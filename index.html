@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Little Stage</title>
+  <meta name="description" content="오케스트라, 바이올린, 춤, 연구 기록을 모아둔 한 페이지" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Gowun+Batang&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="dots" aria-label="섹션 이동">
+    <a href="#cover" aria-label="처음"></a>
+    <a href="#orchestra" aria-label="오케스트라"></a>
+    <a href="#violin" aria-label="바이올린"></a>
+    <a href="#dance" aria-label="춤"></a>
+    <a href="#research" aria-label="연구"></a>
+    <a href="#gallery" aria-label="갤러리"></a>
+  </nav>
+
+  <main class="page">
+    <!-- 커버 -->
+    <section id="cover" class="cover">
+      <div class="cover-photo" id="coverPhoto">
+        <span class="ph-label">Cover photo</span>
+      </div>
+      <p class="cover-sub stagger" style="--d:1" id="coverSub"></p>
+      <h1 class="cover-title stagger" style="--d:2" id="coverTitle"></h1>
+      <p class="cover-name stagger" style="--d:3" id="coverName"></p>
+      <p class="intro stagger" style="--d:4" id="intro"></p>
+      <a class="scroll-hint" href="#orchestra" aria-label="아래로">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- 오케스트라 -->
+    <section id="orchestra" class="section">
+      <p class="label reveal">Orchestra</p>
+      <h2 class="heading reveal">무대의 기록</h2>
+      <div class="carousel reveal">
+        <div class="track" id="concertTrack"></div>
+      </div>
+      <div class="carousel-nav reveal">
+        <button class="arrow" id="prevBtn" aria-label="이전 공연">‹</button>
+        <div class="pager" id="pager"></div>
+        <button class="arrow" id="nextBtn" aria-label="다음 공연">›</button>
+      </div>
+
+      <h3 class="sub reveal">Someday, I'll play</h3>
+      <ul class="wish-list reveal" id="orchWishList"></ul>
+    </section>
+
+    <!-- 바이올린 -->
+    <section id="violin" class="section">
+      <p class="label reveal">Violin</p>
+      <h2 class="heading reveal">바이올린 노트</h2>
+
+      <div class="now-card reveal" id="nowCard">
+        <p class="now-tag"><span class="pulse"></span>Now practicing</p>
+        <p class="now-piece" id="nowPiece"></p>
+        <p class="now-composer" id="nowComposer"></p>
+        <p class="now-note" id="nowNote"></p>
+      </div>
+
+      <h3 class="sub reveal">Concertos I've studied</h3>
+      <ol class="piece-list reveal" id="studiedList"></ol>
+
+      <h3 class="sub reveal">Someday, I'll play</h3>
+      <ul class="wish-list reveal" id="wishList"></ul>
+    </section>
+
+    <!-- 춤 -->
+    <section id="dance" class="section">
+      <p class="label reveal">Dance</p>
+      <h2 class="heading reveal">계속되는 도전</h2>
+      <div class="dance-flow" id="danceFlow"></div>
+      <p class="caption reveal">한 장르씩, 몸으로 배우는 중이에요.</p>
+    </section>
+
+    <!-- 연구 -->
+    <section id="research" class="section">
+      <p class="label reveal">Research Journey</p>
+      <h2 class="heading reveal">신호를 따라온 길</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- 갤러리 -->
+    <section id="gallery" class="section">
+      <p class="label reveal">Moments</p>
+      <h2 class="heading reveal">순간들</h2>
+      <div class="carousel reveal">
+        <div class="track gallery-track" id="galleryTrack"></div>
+      </div>
+      <div class="carousel-nav reveal">
+        <button class="arrow" id="gPrev" aria-label="이전 사진">‹</button>
+        <span class="g-count" id="galleryCount"></span>
+        <button class="arrow" id="gNext" aria-label="다음 사진">›</button>
+      </div>
+      <div class="thumbs reveal" id="galleryThumbs"></div>
+    </section>
+
+    <!-- 마무리 -->
+    <footer class="section closing">
+      <p class="label reveal">Thank you</p>
+      <h2 class="heading reveal">찾아와 주셔서 고마워요</h2>
+      <div class="contacts reveal" id="contacts"></div>
+      <p class="copyright" id="copyright"></p>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
